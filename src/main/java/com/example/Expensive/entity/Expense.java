@@ -1,15 +1,13 @@
 package com.example.Expensive.entity;
 
 import com.example.Expensive.repository.ExpenseRepository;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 
 import java.time.LocalDate;
 import java.util.Objects;
 
 @Entity
+@Table(name = "expense")
 public class Expense {
 
     @Id
